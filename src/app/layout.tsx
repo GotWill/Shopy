@@ -1,8 +1,12 @@
+import { Header } from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+import { NextAuthProvider } from '@/providers/auth'
+import { ToastProvider } from '@/providers/toats'
+import { ProductContextProvider } from '@/context/listProducts'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={montserrat.className}>
+        <NextAuthProvider>
+          <ToastProvider>
+            <ProductContextProvider>
+              <Header />
+              {children}
+            </ProductContextProvider>
+          </ToastProvider>
+        </NextAuthProvider>
+      </body>
     </html>
   )
 }
