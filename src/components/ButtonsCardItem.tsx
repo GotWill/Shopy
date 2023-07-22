@@ -84,7 +84,7 @@ export function ButtonsCardsItem({ product }: ButtonsCardsItemProps) {
     }
 
     return (
-        <div className="absolute -top-10 right-4 h-full flex items-center invisible group-hover:visible">
+        <div className="absolute -top-10 right-4 h-full flex items-center invisible group-hover:visible ">
             <div className="flex flex-col items-center  shadow-2xl">
                 <button onClick={handleAddToCart} className="w-10 h-10 border border-[#eaebed] flex justify-center items-center group/btn hover:bg-[#0989ff]" title="Adicionar ao carinho">
                     <IconShoppingCart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />

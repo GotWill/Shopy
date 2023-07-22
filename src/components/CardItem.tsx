@@ -28,9 +28,9 @@ export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorit
     
 
     return (
-        <div className="border-solid border border-[#eaebed]  rounded-lg relative group">
+        <div className="border-solid border border-[#eaebed]  rounded-lg relative group ">
             <div className="flex justify-center items-center">
-                <Image className="w-[300px] h-[184px] rounded-sm" src={product.image} width={214} height={184} alt="" />
+                <Image className="w-full md:w-[300px] h-[184px] rounded-sm" src={product.image} width={214} height={184} alt="" />
 
                 <div className={`${product.badge === 'Oferta' ? 'bg-green-700' : 'bg-[#0989ff]'} absolute top-3 right-3 px-3 rounded-md`}>
                     <span className="text-white font-bold text-sm">{product.badge}</span>

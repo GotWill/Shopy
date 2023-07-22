@@ -101,7 +101,6 @@ export function Header() {
         style: 'currency'
     }).format(value)
 
-    console.log(newList)
 
 
 
