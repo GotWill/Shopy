@@ -107,7 +107,7 @@ export function Header() {
 
     return (
         <header className="fixed top-0 bg-white z-10 w-full shadow-lg shadow-zinc-500/25">
-            <div className="container border-b-slate-900 border-solid mx-auto flex justify-between  items-center p-5">
+            <div className="container  mx-auto flex justify-between  items-center p-5">
                 <div>
                     <Link href='/'>
                         <Image src="https://weblearnbd.net/tphtml/shofy-prv/shofy/assets/img/logo/logo.svg" width={135} height={35} alt="" />

@@ -31,7 +31,7 @@ export function Slider() {
                             <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">The best note book collection 2023</h3>
                             <p className="font-medium text-base">Exclusive offer <span className="text-[#ffd43a]">-10%
                             </span> off this week</p>
-                            <Link href="#" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
+                            <Link href="/search?text=relógio" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
                                 Compre agora
                             </Link>
                         </div>
@@ -53,7 +53,7 @@ export function Slider() {
                             <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">The best note book collection 2023</h3>
                             <p className="font-medium text-base">Exclusive offer <span className="text-[#ffd43a]">-10%
                             </span> off this week</p>
-                            <Link href="#" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
+                            <Link href="/search?text=relógio" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
                                 Compre agora
                             </Link>
                         </div>

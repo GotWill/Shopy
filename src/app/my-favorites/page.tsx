@@ -2,7 +2,7 @@
 
 import { CardItem } from "@/components/CardItem";
 import { Prisma } from "@prisma/client";
-import { useSession } from "next-auth/react"
+import { signIn, useSession } from "next-auth/react"
 import Link from "next/link";
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -55,7 +55,7 @@ function MyFavorites() {
 
 
     return (
-        <div className="mt-4 container mx-auto px-4">
+        <div className="mt-36 container mx-auto px-4">
 
             {
                 favorites.length > 0 ?

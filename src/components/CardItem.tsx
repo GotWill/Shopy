@@ -28,7 +28,7 @@ export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorit
     
 
     return (
-        <div className="border-solid border border-[#eaebed]  rounded-lg relative group ">
+        <div className="border-solid border border-[#eaebed]  rounded-lg relative group max-w-[302px]">
             <div className="flex justify-center items-center">
                 <Image className="w-full md:w-[300px] h-[184px] rounded-sm" src={product.image} width={214} height={184} alt="" />
 
@@ -38,7 +38,7 @@ export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorit
             </div>
 
             <div className="border-t-[#eaebed] p-5 border-solid border flex flex-col">
-                <span className="text-base text-slate-500 font-medium">{product.category}</span>
+                <span className="text-base text-slate-500 font-medium capitalize">{product.category}</span>
                 <h3 className="text-lg text-slate-900 font-bold">{product.name}</h3>
                 <div className="my-1 flex items-center gap-1">
                     <IconStar color="#ffb21d" width={15} height={15} />
