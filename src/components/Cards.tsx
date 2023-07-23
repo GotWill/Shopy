@@ -5,8 +5,8 @@ import IconTruckFast from "@/icons/iconTruckFast";
 
 export function Cards(){
     return (
-        <section className="container mx-auto px-3 mt-5 flex flex-col gap-4 justify-center items-center md:flex-row">
-            <div className="bg-[#f6f7f9] p-4 w-full flex gap-5">
+        <section className="container mx-auto px-3 mt-5 flex flex-col gap-4 justify-center items-center md:flex-row max-[1230px]:flex-wrap">
+            <div className="bg-[#f6f7f9] p-4 max-w-[350px] w-full flex gap-5">
                 <div>
                     <IconTruckFast color="#fd4b6b" width={40} height={40}/>
                 </div>
@@ -16,7 +16,7 @@ export function Cards(){
                 </div>
             </div>
 
-            <div className="bg-[#f6f7f9] p-4 w-full flex gap-5">
+            <div className="bg-[#f6f7f9] p-4 max-w-[350px] w-full flex gap-5">
                 <div>
                     <IconMoneyDollarCircleLine color="#fd4b6b" width={40} height={40}/>
                 </div>
@@ -26,7 +26,7 @@ export function Cards(){
                 </div>
             </div>
 
-            <div className="bg-[#f6f7f9] p-4 w-full flex gap-5">
+            <div className="bg-[#f6f7f9] p-4 max-w-[350px] w-full flex gap-5">
                 <div>
                     <IconDiscount color="#fd4b6b" width={40} height={40}/>
                 </div>
@@ -36,7 +36,7 @@ export function Cards(){
                 </div>
             </div>
 
-            <div className="bg-[#f6f7f9] p-4 w-full flex gap-5">
+            <div className="bg-[#f6f7f9] p-4 max-w-[350px] w-full flex gap-5">
                 <div>
                     <IconBxSupport color="#fd4b6b" width={40} height={40}/>
                 </div>

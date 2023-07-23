@@ -16,7 +16,7 @@ export async function Products() {
     const products = await allProducts();
 
     return (
-        <section className="container mx-auto px-5 my-14 flex flex-col gap-4 md:flex-row md:flex-wrap">
+        <section className="container mx-auto px-5 my-14 flex flex-col justify-center gap-4 md:flex-row md:flex-wrap">
 
             {
                 products.map((product) => {

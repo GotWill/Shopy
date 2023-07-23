@@ -1,5 +1,4 @@
 'use client'
-import "./styles.css"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import { useState } from "react"
@@ -23,7 +22,7 @@ export function Slider() {
 
     return (
 
-        <div className="relative">
+        <div className="relative mt-24">
             <div ref={sliderRef} className="keen-slider">
                 <div className="keen-slider__slide bg-[#115061]  max-h-screen">
                     <div className="container mx-auto p-4 flex flex-col gap-10 md:flex-row md:justify-around md:items-center md:p-0 md:h-[400px] h-full  text-white">
