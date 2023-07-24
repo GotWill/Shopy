@@ -1,7 +1,7 @@
 import { prisma } from "@/app/lib/prisma"
 import { NextResponse } from "next/server"
 
-export async function GET(request: Request, { params: { userId } }: { params: { userId: string } }) {
+export async function GET(request: Request, { params: { userId} }: { params: { userId: string } }) {
 
 
     if (!userId) {
@@ -13,7 +13,7 @@ export async function GET(request: Request, { params: { userId } }: { params: { 
         }
     }
 
-    const favorites = await prisma.favorites.findMany({
+    const requests = await prisma.requests.findMany({
         where: {
             userId: userId,
         },
@@ -22,5 +22,6 @@ export async function GET(request: Request, { params: { userId } }: { params: { 
         }
     })
 
-    return new NextResponse(JSON.stringify(favorites), {status: 200})
+
+    return new NextResponse(JSON.stringify(requests), {status: 200})
 }

@@ -1,22 +1,14 @@
 'use client'
 
 
-import IconCheckCircle from "@/icons/IconCheckCircle"
+import { BadgeCheck } from "lucide-react";
 import { useSession } from "next-auth/react"
 import Link from "next/link"
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 function Success() {
 
     const { data, status } = useSession();
-    const router = useRouter();
-
-    useEffect(() => {
-        if (status === 'unauthenticated') {
-            router.push('/')
-        }
-    }, [router, status])
+   
 
     return (
         <div className="container mx-auto flex justify-center items-center mt-36 px-5 md:px-0">
@@ -24,7 +16,7 @@ function Success() {
             <div className="shadow-2xl p-8 flex flex-col justify-center items-center gap-4">
 
                 <div className="w-24 h-24 bg-green-700 rounded-full flex justify-center items-center">
-                    <IconCheckCircle color="#FFF" width={50} height={50} />
+                    <BadgeCheck color="#FFF" width={50} height={50} />
                 </div>
 
                 <h2 className="font-bold text-slate-900 text-base">
@@ -38,7 +30,7 @@ function Success() {
 
                 </p>
 
-                <Link href="/" className="bg-[#0989ff] text-white p-2 rounded-md font-bold w-full text-center">
+                <Link  href="/my-request" className="bg-[#0989ff] text-white p-2 rounded-md font-bold w-full text-center">
                     Ver Meus pedidos
                 </Link>
             </div>

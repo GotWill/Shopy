@@ -21,13 +21,13 @@ export async function POST(request: Request) {
     const { product, qnt } = data;
 
 
-     const {productId, name, image, description, price } = product
+     const {id, name, image, description, price } = product
 
 
      const session = await stripe.checkout.sessions.create({
         success_url: process.env.SUCCESS_URL!,
         metadata: {
-            productId,
+            id,
             name,
             image,
             description,

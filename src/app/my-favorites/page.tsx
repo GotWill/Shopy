@@ -64,7 +64,7 @@ function MyFavorites() {
                         <div className="flex flex-col gap-6 md:flex-row md:flex-wrap">
                             {favorites.map((favorite) => {
                                 return (
-                                    <CardItem  fecthFavorites={fetchFavorites} handleDeleteItem={() => deleteItem(favorite.id)} buttonCancel={true} product={favorite.Products} key={favorite.id} />
+                                    <CardItem  fecthFavorites={fetchFavorites} titleButton="Remover dos Favoritos" handleDeleteItem={() => deleteItem(favorite.id)} buttonCancel={true} product={favorite.Products} key={favorite.id} />
                                 )
                             })}
                         </div>

@@ -4,15 +4,17 @@ import IconStar from "@/icons/iconStart";
 import { Products } from "@prisma/client";
 import Image from "next/image";
 import { ButtonsCardsItem } from "./ButtonsCardItem";
+import { Star } from "lucide-react";
 
 interface CardItemProps {
     product: Products;
     buttonCancel?: boolean;
     handleDeleteItem?: (id: string) => void;
     fecthFavorites?: () => void;
+    titleButton?: string;
 }
 
-export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorites}: CardItemProps) {
+export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorites, titleButton}: CardItemProps) {
 
     function handleClick() {
         if (handleDeleteItem) {
@@ -28,7 +30,7 @@ export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorit
     
 
     return (
-        <div className="border-solid border border-[#eaebed]  rounded-lg relative group max-w-[302px]">
+        <div className="border-solid border border-[#eaebed]  rounded-lg relative group max-w-[290px]">
             <div className="flex justify-center items-center">
                 <Image className="w-full md:w-[300px] h-[184px] rounded-sm" src={product.image} width={214} height={184} alt="" />
 
@@ -39,19 +41,21 @@ export function CardItem({ product, buttonCancel, handleDeleteItem, fecthFavorit
 
             <div className="border-t-[#eaebed] p-5 border-solid border flex flex-col">
                 <span className="text-base text-slate-500 font-medium capitalize">{product.category}</span>
-                <h3 className="text-lg text-slate-900 font-bold">{product.name}</h3>
+                <h3 className="text-base text-slate-900 font-bold">{product.name}</h3>
                 <div className="my-1 flex items-center gap-1">
-                    <IconStar color="#ffb21d" width={15} height={15} />
-                    <IconStar color="#ffb21d" width={15} height={15} />
-                    <IconStar color="#ffb21d" width={15} height={15} />
-                    <IconStar color="#ffb21d" width={15} height={15} />
-                    <IconStar color="#ffb21d" width={15} height={15} />
+                    <Star color="#ffb21d" width={15} height={15} />
+                    <Star color="#ffb21d" width={15} height={15} />
+                    <Star color="#ffb21d" width={15} height={15} />
+                    <Star color="#ffb21d" width={15} height={15} />
+                    <Star color="#ffb21d" width={15} height={15} />
                 </div>
                 <span className="text-lg font-bold text-[#0989ff]">{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
 
 
                 {
-                    buttonCancel && <button onClick={handleClick} className="text-red-500 mt-3 border-red-500 border hover:bg-red-600 bg-transparent hover:text-white p-2 text-base rounded-xl">Remover dos Favoritos</button>
+                    buttonCancel && <button onClick={handleClick} className="text-red-500 mt-3 border-red-500 border hover:bg-red-600 bg-transparent hover:text-white p-2 text-base rounded-xl">
+                        {titleButton}
+                    </button>
                 }
 
             </div>

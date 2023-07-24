@@ -4,6 +4,7 @@ import { ProductContext } from "@/context/listProducts";
 import IconHeart from "@/icons/iconHeart";
 import IconShoppingCart from "@/icons/iconShoppingCart";
 import { Products } from "@prisma/client";
+import { Heart, ShoppingCart } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { useContext } from "react";
 import { toast } from "react-toastify";
@@ -87,10 +88,10 @@ export function ButtonsCardsItem({ product }: ButtonsCardsItemProps) {
         <div className="absolute -top-10 right-4 h-full flex items-center invisible group-hover:visible ">
             <div className="flex flex-col items-center  shadow-2xl">
                 <button onClick={handleAddToCart} className="w-10 h-10 border border-[#eaebed] flex justify-center items-center group/btn hover:bg-[#0989ff]" title="Adicionar ao carinho">
-                    <IconShoppingCart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />
+                  <ShoppingCart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />
                 </button>
                 <button onClick={addFavoriteItem} className="w-10 h-10 border border-[#eaebed] flex justify-center items-center group/btn hover:bg-[#0989ff]" title="Favoritar produto">
-                    <IconHeart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />
+                    <Heart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />
                 </button>
 
 
