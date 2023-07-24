@@ -5,6 +5,9 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+import sliderImg from '../assets/img/slider.webp'
+import shape from '../assets/img/shape.webp'
+
 
 export function Slider() {
 
@@ -36,10 +39,10 @@ export function Slider() {
                             </Link>
                         </div>
                         <div>
-                            <Image src="https://weblearnbd.net/tphtml/shofy-prv/shofy/assets/img/slider/slider-img-1.png" width={320} height={250} alt="" />
+                            <Image src={sliderImg} width={320} height={250} alt="" />
 
                             <div className="absolute top-0 right-0 -z-10 opacity-10">
-                                <Image src="https://weblearnbd.net/tphtml/shofy-prv/shofy/assets/img/slider/shape/slider-shape-1.png" width={320} height={250} alt="" />
+                                <Image src={shape} width={320} height={250} alt="" />
 
                             </div>
                         </div>
@@ -58,10 +61,10 @@ export function Slider() {
                             </Link>
                         </div>
                         <div>
-                            <Image src="https://weblearnbd.net/tphtml/shofy-prv/shofy/assets/img/slider/slider-img-1.png" width={320} height={250} alt="" />
+                            <Image  src={sliderImg} width={320} height={250} alt="" />
 
                             <div className="absolute top-0 right-0 -z-10 opacity-10">
-                                <Image src="https://weblearnbd.net/tphtml/shofy-prv/shofy/assets/img/slider/shape/slider-shape-1.png" width={320} height={250} alt="" />
+                                <Image src={shape} width={320} height={250} alt="" />
 
                             </div>
                         </div>
