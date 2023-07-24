@@ -15,17 +15,11 @@ export async function POST(request: Request) {
     if (event.type === "checkout.session.completed") {
         const session = event.data.object as any;
 
-        console.log(session);
-
         const cartData = JSON.parse(session.metadata.cart_data);
         const { userId } = cartData;
         const products = cartData.productIds;
-
         
-
         for (const product of products) {
-            console.log("id do produt", product)
-
 
             await prisma.requests.create({
                 data: {
@@ -40,7 +34,7 @@ export async function POST(request: Request) {
             service: 'Gmail',
             auth: {
                 user: 'williansouza9687a@gmail.com',
-                pass: 'ldnevxjzbrahxhpj',
+                pass: process.env.GOOGLE_PASSWORD_EMAIL,
             },
         });
         const mailOptions = {
