@@ -30,7 +30,7 @@ function Success() {
 
                 </p>
 
-                <Link  href="/my-request" className="bg-[#0989ff] text-white p-2 rounded-md font-bold w-full text-center">
+                <Link  href="/my-requests" className="bg-[#0989ff] text-white p-2 rounded-md font-bold w-full text-center">
                     Ver Meus pedidos
                 </Link>
             </div>
