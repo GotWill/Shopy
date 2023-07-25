@@ -1,8 +1,6 @@
 'use client'
 
 import { ProductContext } from "@/context/listProducts";
-import IconHeart from "@/icons/iconHeart";
-import IconShoppingCart from "@/icons/iconShoppingCart";
 import { Products } from "@prisma/client";
 import { Heart, ShoppingCart } from "lucide-react";
 import { useSession } from "next-auth/react";
@@ -93,9 +91,6 @@ export function ButtonsCardsItem({ product }: ButtonsCardsItemProps) {
                 <button onClick={addFavoriteItem} className="w-10 h-10 border border-[#eaebed] flex justify-center items-center group/btn hover:bg-[#0989ff]" title="Favoritar produto">
                     <Heart className="group-hover/btn:text-white text-[#0989ff]" width={24} height={24} />
                 </button>
-
-
-
             </div>
         </div>
     )

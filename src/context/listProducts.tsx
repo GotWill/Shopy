@@ -3,7 +3,6 @@ import  { ReactNode, createContext, useState } from "react"
 import { Products } from "@prisma/client"
 
 interface State {
-
     data: {
         product: Products;
         qnt: number
@@ -30,7 +29,6 @@ export function ProductContextProvider ({children}: ChildrenTypeProps){
     function addProducts(product: State[]){
         setListProducts(product)
     }
-
 
 
     return (

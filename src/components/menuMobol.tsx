@@ -8,7 +8,7 @@ interface MenuMobolProps {
 }
 
 export function MenuMobol({closeDialog, open} : MenuMobolProps) {
-    const { status, data } = useSession();
+    const { status} = useSession();
 
     return (
         <div className="absolute bg-white top-0 right-0 w-[300px] h-screen z-30 shadow-lg shadow-zinc-500/25">

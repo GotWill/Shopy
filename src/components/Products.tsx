@@ -1,8 +1,4 @@
 import { prisma } from "@/app/lib/prisma";
-import IconHeart from "@/icons/iconHeart";
-import IconShoppingCart from "@/icons/iconShoppingCart";
-import IconStar from "@/icons/iconStart";
-import Image from "next/image";
 import { CardItem } from "./CardItem";
 
 

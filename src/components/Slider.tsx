@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import sliderImg from '../assets/img/slider.webp'
+import iphone from '../assets/img/iphone.png'
 import shape from '../assets/img/shape.webp'
 
 
@@ -30,32 +31,10 @@ export function Slider() {
                 <div className="keen-slider__slide bg-[#115061]  max-h-screen">
                     <div className="container mx-auto p-4 flex flex-col gap-10 md:flex-row md:justify-around md:items-center md:p-0 md:h-[400px] h-full  text-white">
                         <div className="flex flex-col items-start gap-2">
-                            <span className="text-base">Starting at  <b>$999.00</b></span>
-                            <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">The best note book collection 2023</h3>
-                            <p className="font-medium text-base">Exclusive offer <span className="text-[#ffd43a]">-10%
-                            </span> off this week</p>
-                            <Link href="/search?text=relógio" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
-                                Compre agora
-                            </Link>
-                        </div>
-                        <div>
-                            <Image src={sliderImg} width={320} height={250} alt="" />
-
-                            <div className="absolute top-0 right-0 -z-10 opacity-10">
-                                <Image src={shape} width={320} height={250} alt="" />
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="keen-slider__slide bg-[#115061]  max-h-screen">
-                    <div className="container mx-auto p-4 flex flex-col gap-10 md:flex-row md:justify-around md:items-center md:p-0 md:h-[400px] h-full  text-white">
-                        <div className="flex flex-col items-start gap-2">
-                            <span className="text-base">Starting at  <b>$999.00</b></span>
-                            <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">The best note book collection 2023</h3>
-                            <p className="font-medium text-base">Exclusive offer <span className="text-[#ffd43a]">-10%
-                            </span> off this week</p>
+                            <span className="text-base">Preço  <b>$450.00</b></span>
+                            <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">A melhor coleção de Smartwatch 2023</h3>
+                            <p className="font-medium text-base">Oferta exclusiva <span className="text-[#ffd43a]">-10%
+                            </span></p>
                             <Link href="/search?text=relógio" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
                                 Compre agora
                             </Link>
@@ -71,8 +50,27 @@ export function Slider() {
                     </div>
                 </div>
 
-               
+                <div className="keen-slider__slide bg-[#115061]  max-h-screen">
+                    <div className="container mx-auto p-4 flex flex-col gap-10 md:flex-row md:justify-around md:items-center md:p-0 md:h-[400px] h-full  text-white">
+                        <div className="flex flex-col items-start gap-2">
+                            <span className="text-base">Preço  <b>$450.00</b></span>
+                            <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">A melhor coleção de Iphone 2023</h3>
+                            <p className="font-medium text-base">Oferta exclusiva <span className="text-[#ffd43a]">-10%
+                            </span></p>
+                            <Link href="/search?text=iphone" className="bg-white text-[#010f1c] py-2 px-6 rounded-lg font-medium text-base hover:bg-transparent hover:border hover:border-x-white hover:text-white transition duration-700 ease-in-out">
+                                Compre agora
+                            </Link>
+                        </div>
+                        <div>
+                            <Image  src={iphone} width={320} height={250} alt="" />
 
+                            <div className="absolute top-0 right-0 -z-10 opacity-10">
+                                <Image src={shape} width={320} height={250} alt="" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             {loaded && instanceRef.current && (

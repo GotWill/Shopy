@@ -110,13 +110,9 @@ export function ShoppingCart({ open, closeDialog }: shoppingCartProps) {
 
     }
 
-
-
-
-
     return (
 
-        <div className="absolute w-full  md:w-[400px]  top-20 rounded-lg  right-0 bg-white z-10 shadow-2xl">
+        <div className={`absolute w-full  md:w-[400px]  ${listProducts.length > 0 ? '' : ''} top-20 rounded-lg  right-0 bg-white z-10 shadow-2xl`}>
             <div className="flex justify-between items-center p-4">
                 <span className="text-lg text-slate-900 font-bold">SHOPPING CART</span>
 
@@ -150,9 +146,6 @@ export function ShoppingCart({ open, closeDialog }: shoppingCartProps) {
                         )
                     })
                 }
-
-
-
             </div>
 
             {

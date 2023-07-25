@@ -28,7 +28,6 @@ export function Header() {
                     </Link>
                 </div>
 
-
                 <div className="flex items-center gap-5 md:hidden">
                     <button title="Carinho de compras" onClick={() => setmenuCheckout(true)} className="relative">
                         <ShoppingBag width={25} height={25} />
@@ -61,9 +60,6 @@ export function Header() {
 
                     </div>
                 </div>
-
-
-
 
                 <div className="hidden items-center gap-5 md:flex">
                     <div className="flex gap-4 items-center">

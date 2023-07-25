@@ -15,6 +15,17 @@ export async function POST(request: Request) {
     if (event.type === "checkout.session.completed") {
         const session = event.data.object as any;
 
+        console.log(session)
+
+        const amountTotal = session.amount_total;
+
+        const formattedAmount = (amountTotal / 100).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+          });
+
+          console.log('preco', formattedAmount)
+
         const cartData = JSON.parse(session.metadata.cart_data);
         const { userId } = cartData;
         const products = cartData.productIds;
@@ -44,6 +55,7 @@ export async function POST(request: Request) {
             html: `
               <h1 style="font-size: 20px; margin-bottom: 0;"> Olá <strong style="color:#0989ff">${session.customer_details.name}</strong> </h1> <br>
               <p style="margin-top: 0; color: #0f172a">Agradecemos por comprar conosco</p>
+              <p>Valor Total do seu pedido <strong style="color:#0989ff">${formattedAmount}</strong> </p>
             `,
         };
 

@@ -1,4 +1,3 @@
-import IconDiscount from "@/icons/iconDiscount";
 import { CircleDollarSign, Headphones, Percent, Truck } from "lucide-react";
 
 export function Cards() {
