@@ -32,7 +32,6 @@ export default  function MyRequest() {
         fetchFavorites()
     }, [])
 
-    console.log(requests)
 
 
     return (
