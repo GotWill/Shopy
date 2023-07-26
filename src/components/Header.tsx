@@ -47,7 +47,7 @@ export function Header() {
 
                     </button>
                     {
-                        menuMobol && <MenuMobol open={menuMobol} closeDialog={() => setMenuMobol(false)} />
+                        menuMobol &&  <MenuMobol open={menuMobol} closeDialog={() => setMenuMobol(false)} />
                     }
                     <div className="w-14 h-14 border-gray-600 border rounded-full flex justify-center items-center md:hidden">
 
