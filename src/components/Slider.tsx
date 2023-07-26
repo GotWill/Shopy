@@ -53,7 +53,7 @@ export function Slider() {
                 <div className="keen-slider__slide bg-[#115061]  max-h-screen">
                     <div className="container mx-auto p-4 flex flex-col gap-10 md:flex-row md:justify-around md:items-center md:p-0 md:h-[400px] h-full  text-white">
                         <div className="flex flex-col items-start gap-2">
-                            <span className="text-base">Preço  <b>$450.00</b></span>
+                            <span className="text-base">Preço apartir de  <b>$3.500.00</b></span>
                             <h3 className="font-bold text-4xl max-w-md mb-2 md:text-5xl">A melhor coleção de Iphone 2023</h3>
                             <p className="font-medium text-base">Oferta exclusiva <span className="text-[#ffd43a]">-10%
                             </span></p>
