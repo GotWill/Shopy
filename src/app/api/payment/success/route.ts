@@ -59,7 +59,7 @@ export async function POST(request: Request) {
                 <h1 style="font-size: 20px; margin-bottom: 0;"> Olá <strong style="color:#0989ff">${session.customer_details.name}</strong> </h1> <br>
                 <p style="margin-top: 0; color: #0f172a">Agradecemos por comprar conosco</p>
                 <p>Valor Total do seu pedido <strong style="color:#0989ff">${formattedAmount}</strong> </p>
-                <span>sfgfdh</span>
+               
             `,
         };
 
