@@ -14,7 +14,9 @@ export async function POST(request: Request) {
 
     const response = await prisma.favorites.findFirst({
         where: {
-            productsId: data.id 
+           productsId: data.id,
+           userId: (userSession?.user as any)?.id,
+           
         }
     })
 
@@ -33,7 +35,8 @@ export async function POST(request: Request) {
         await prisma.favorites.create({
             data: {
                 productsId: data.id,
-                userId: (userSession?.user as any)?.id
+                userId: (userSession?.user as any)?.id,
+               
             }
         })
 
